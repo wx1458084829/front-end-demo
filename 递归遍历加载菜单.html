@@ -37,6 +37,7 @@
             for (const item in menu) {
                 console.log(menu[item].title);
                 if (menu[item].child != undefined) {
+                    // 这里不能用return，return会终止
                     listMeun(menu[item].child)
                 }
             }
